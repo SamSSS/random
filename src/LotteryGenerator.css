@@ -1,0 +1,34 @@
+.number-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.number-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.number-checkbox.selected {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.number-checkbox {
+  cursor: pointer;
+}
+.results {
+  margin-top: 20px;
+}
+
+.result {
+  background: #e1e1e1;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
