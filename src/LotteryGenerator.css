@@ -1,7 +1,39 @@
+button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text color */
+  padding: 15px 20px; /* Larger padding */
+  margin: 8px 0; /* Margin on top and bottom */
+  border: none; /* No border */
+  cursor: pointer; /* Cursor on hover */
+  width: auto; /* Auto width */
+  transition: all 0.3s; /* Smooth transition for all properties */
+  border-radius: 12px; /* Rounded corners */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.generate-button {
+  background-color: #4CAF50; /* Example: Green for Generate Button */
+}
+
+.reset-button {
+  background-color: #f44336; /* Example: Red for Reset Button */
+}
+
+.select-last-result-button {
+  background-color: #2196F3; /* Example: Blue for Select Last Result Button */
+}
+
+.reset-selected-button {
+  background-color: #ff9800; /* Example: Orange for Reset Selected Button */
+}
+
 .number-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 8px;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 0px;
 }
 
 .number-checkbox {
@@ -10,18 +42,19 @@
   justify-content: center;
   padding: 4px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 0px;
   cursor: pointer;
+  margin: 0;
+}
+
+.number-checkbox input {
+  display: none;
 }
 
 .number-checkbox.selected {
-  background-color: gray;
-  cursor: pointer;
+  background-color: gray !important;
 }
 
-.number-checkbox {
-  cursor: pointer;
-}
 .results {
   margin-top: 20px;
 }
@@ -31,4 +64,8 @@
   padding: 8px;
   margin-bottom: 8px;
   border-radius: 4px;
+}
+
+.row-number {
+  font-weight: bold;
 }
